@@ -1,0 +1,26 @@
+@REListing_HostAddress = http://localhost:5161
+
+GET {{REListing_HostAddress}}/api/listings
+Accept: application/json
+
+###
+
+GET {{REListing_HostAddress}}/api/listings?city=Springfield&minPrice=450000&maxPrice=525000
+Accept: application/json
+
+###
+
+GET {{REListing_HostAddress}}/api/listings?minBedrooms=3&keyword=metro
+Accept: application/json
+
+###
+
+GET {{REListing_HostAddress}}/api/listings?page=2&pageSize=5
+Accept: application/json
+
+###
+
+GET {{REListing_HostAddress}}/api/listings/A1
+Accept: application/json
+
+###
